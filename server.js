@@ -23,14 +23,7 @@ const fetchJSON = (endpoint, method="GET", body=undefined) => (
       })
   )
 
-  app.get('/', (req, res, next) => {
-
-    const apiurl = `${url}/positions.json`
-
-    fetchJSON(apiurl)
-    .then(response => res.json(response))
-    .catch(err => res.json({success: false, msg: err.msg}))
-})
+app.get('/', (req, res, next) => res.redirect('/positions.json'))
 
 app.get('/:param', (req, res, next) => {
 
