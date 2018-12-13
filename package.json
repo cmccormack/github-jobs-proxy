@@ -1,0 +1,17 @@
+{
+  "name": "github-jobs",
+  "version": "1.0.0",
+  "description": "github jobs api helper",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "express": "^4.16.4",
+    "node-fetch": "^2.3.0",
+    "query-string": "^6.2.0"
+  }
+}
