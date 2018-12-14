@@ -2,8 +2,12 @@ const app = require('express')()
 const chalk = require('chalk')
 const fetch = require('node-fetch')
 const qs = require('query-string')
+const cors = require('cors')
 
 app.set('port', process.env.PORT || 3000)
+
+// Handle cross-site request
+app.use(cors())
 
 const url = 'https://jobs.github.com'
 
